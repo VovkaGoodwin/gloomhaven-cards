@@ -6,7 +6,7 @@ use App\Models\Card;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 
-class CardsFactory extends Factory {
+class CardFactory extends Factory {
   protected $model = Card::class;
 
   public function definition(): array {

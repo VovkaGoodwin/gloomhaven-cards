@@ -3,7 +3,7 @@
     <div class="card-header d-flex justify-content-between align-items-center">
       <div>{{ $card->title }}</div>
       <div>
-        <form action="/cards/{{ $card->id }}" method="post">
+        <form action="/cards/{{ $card->id }}" method="post" onsubmit="return confirm(`Вы точно хотите удалить карточку '{{ $card->title }}'?`)">
           <button class="btn btn-outline-danger">Удалить</button>
           @csrf
           @method('DELETE')
