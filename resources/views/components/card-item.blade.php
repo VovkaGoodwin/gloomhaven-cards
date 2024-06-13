@@ -3,6 +3,13 @@
     <div class="card-header d-flex justify-content-between align-items-center">
       <div>{{ $card->title }}</div>
       <div>
+        <form action="/cards/{{ $card->id }}" method="post">
+          <button class="btn btn-outline-danger">Удалить</button>
+          @csrf
+          @method('DELETE')
+        </form>
+      </div>
+      <div>
         <button type="button" class="btn btn-link" onclick="window.location = `/cards/{{ $card->id }}/edit`">Редактировать</button>
       </div>
     </div>

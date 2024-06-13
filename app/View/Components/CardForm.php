@@ -17,6 +17,7 @@ class CardForm extends Component {
       'number' => $this->card?->number ?? '',
       'title' => $this->card?->title ?? '',
       'text' => $this->card?->text ?? '',
+      'id' => $this->card?->id ?? null,
     ]);
   }
 }
