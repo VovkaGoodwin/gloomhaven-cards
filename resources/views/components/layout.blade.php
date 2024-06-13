@@ -7,6 +7,7 @@
     <title>Краточки для Gloomhaven</title>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @stack('scripts')
   </head>
   <body>
     <div class="container">
