@@ -8,7 +8,7 @@ use Illuminate\View\Component;
 class Cards extends Component {
 
   public function __construct(
-    private readonly Collection $cards,
+    private $cards,
   ) {
 
   }

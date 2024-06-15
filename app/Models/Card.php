@@ -13,4 +13,8 @@ class Card extends Model {
     'number',
     'title'
   ];
+
+  public function getTextForTextarea(): string {
+    return nl2br($this->text);
+  }
 }

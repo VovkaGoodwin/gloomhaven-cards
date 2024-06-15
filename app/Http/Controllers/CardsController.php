@@ -9,7 +9,7 @@ use App\Models\Card;
 
 class CardsController extends Controller {
   public function index() {
-    return view('index', ['cards' => Card::all(), 'searchNumber' => '']);
+    return view('index', ['cards' => Card::paginate(9), 'searchNumber' => '']);
   }
 
   public function create(CreateCardRequest $request) {

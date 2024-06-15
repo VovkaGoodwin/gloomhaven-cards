@@ -6,13 +6,13 @@
   </script>
 @endpushonce
 <div style="flex: 1 0 30%">
-  <div class="card shadow">
+  <div class="card shadow" style="height: 100%;">
     <div class="card-header d-flex justify-content-between align-items-center">
       <div>{{ $card->title }}</div>
 
     </div>
     <div class="card-body" style="min-height: 200px">
-      {{ $card->text }}
+      <p>{!! $card->getTextForTextarea() !!}</p>
     </div>
     <div class="card-body d-flex justify-content-between align-items-center">
       <div>
